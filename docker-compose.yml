@@ -1,0 +1,7 @@
+services:
+  leave-calendar:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./sqlite_data:/app/data

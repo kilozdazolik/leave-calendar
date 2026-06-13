@@ -1,0 +1,46 @@
+.nav-link {
+    cursor: pointer;
+    color: #555;
+}
+
+.nav-link.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.badge-pending  { background-color: #fff3cd; color: #856404; }
+.badge-approved { background-color: #d1e7dd; color: #0a5c36; }
+.badge-rejected { background-color: #f8d7da; color: #842029; }
+
+.badge-status {
+    padding: 0.35em 0.65em;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+tr.conflict {
+    background-color: #fff3cd !important;
+    border-left: 4px solid #f0ad4e;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-grid .contents {
+    display: contents;
+}
+
+.calendar-day-cell {
+    min-height: 100px;
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem;
+}
+
+.calendar-day-cell:nth-child(7n) {
+    border-right: none;
+}
